@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+
+# Data cache
+data/cache_128x128/
+
+# Streamlit
+.streamlit/
+
+# Original dataset - do not upload to GitHub
+0 FaceImages/

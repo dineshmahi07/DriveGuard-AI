@@ -1,0 +1,466 @@
+{
+  "custom_cnn": {
+    "model_type": "custom_cnn",
+    "checkpoint_path": "checkpoints/best_driveguard_cnn.pt",
+    "checkpoint_size_mb": 4.86,
+    "trainable_parameters": 422306,
+    "best_epoch_in_training": 6,
+    "test_samples_total": 1368,
+    "accuracy": 0.78,
+    "balanced_accuracy": 0.78,
+    "macro_precision": 0.786,
+    "macro_recall": 0.78,
+    "macro_f1": 0.7788,
+    "roc_auc": 0.8747,
+    "confusion_matrix": [
+      [
+        583,
+        101
+      ],
+      [
+        200,
+        484
+      ]
+    ],
+    "true_negatives_active": 583,
+    "false_positives_fatigue_alarm": 101,
+    "false_negatives_missed_drowsiness": 200,
+    "true_positives_detected_drowsiness": 484,
+    "per_class": {
+      "Active Subjects": {
+        "precision": 0.7446,
+        "recall": 0.8523,
+        "f1_score": 0.7948,
+        "support": 684
+      },
+      "Fatigue Subjects": {
+        "precision": 0.8274,
+        "recall": 0.7076,
+        "f1_score": 0.7628,
+        "support": 684
+      }
+    },
+    "classification_report": {
+      "Active Subjects": {
+        "precision": 0.7445721583652618,
+        "recall": 0.8523391812865497,
+        "f1-score": 0.7948193592365371,
+        "support": 684.0
+      },
+      "Fatigue Subjects": {
+        "precision": 0.8273504273504273,
+        "recall": 0.7076023391812866,
+        "f1-score": 0.7628053585500394,
+        "support": 684.0
+      },
+      "accuracy": 0.7799707602339181,
+      "macro avg": {
+        "precision": 0.7859612928578446,
+        "recall": 0.7799707602339181,
+        "f1-score": 0.7788123588932883,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.7859612928578446,
+        "recall": 0.7799707602339181,
+        "f1-score": 0.7788123588932883,
+        "support": 1368.0
+      }
+    },
+    "avg_inference_latency_ms": 7.24,
+    "misclassified_count": 301,
+    "sample_misclassified": [
+      {
+        "filename": "img_e_14190.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.2089836150407791
+      },
+      {
+        "filename": "image_1890 (2).jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.2146034687757492
+      },
+      {
+        "filename": "img_f_6583.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.24044696986675262
+      },
+      {
+        "filename": "img_e_14674.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.6625964045524597
+      },
+      {
+        "filename": "img_e_8130.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.27097466588020325
+      },
+      {
+        "filename": "image_0 (5).jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.5012686848640442
+      },
+      {
+        "filename": "img_c_12470.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.5616332292556763
+      },
+      {
+        "filename": "img_e_13830.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.20642684400081635
+      },
+      {
+        "filename": "img_f_3625.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.1903679221868515
+      },
+      {
+        "filename": "img_c_14935.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.5410946607589722
+      },
+      {
+        "filename": "img_j_8004.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.36001554131507874
+      },
+      {
+        "filename": "image_2040 (4).jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.17203617095947266
+      },
+      {
+        "filename": "img_e_14645.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.6589347124099731
+      },
+      {
+        "filename": "image_522.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.7483522295951843
+      },
+      {
+        "filename": "image_1508 (2).jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.9575715065002441
+      }
+    ],
+    "test_predictions_summary": {
+      "total": 1368,
+      "targets_sample": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "preds_sample": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "probs_sample": [
+        0.5440062880516052,
+        0.2089836150407791,
+        0.9999960660934448,
+        0.2146034687757492,
+        0.9374802708625793,
+        0.183718740940094,
+        0.026916107162833214,
+        0.24044696986675262,
+        0.028432462364435196,
+        0.07958381623029709,
+        0.9421805143356323,
+        0.5130831599235535,
+        0.001512007205747068,
+        0.23254770040512085,
+        0.19687984883785248,
+        0.9094913601875305,
+        0.0022412475664168596,
+        0.3170618414878845,
+        0.9999998807907104,
+        0.6098923087120056
+      ]
+    }
+  },
+  "mobilenet_v2": {
+    "model_type": "mobilenet_v2",
+    "checkpoint_path": "checkpoints/best_mobilenet_v2.pt",
+    "checkpoint_size_mb": 27.7,
+    "trainable_parameters": 2388098,
+    "best_epoch_in_training": 6,
+    "test_samples_total": 1368,
+    "accuracy": 0.962,
+    "balanced_accuracy": 0.962,
+    "macro_precision": 0.9621,
+    "macro_recall": 0.962,
+    "macro_f1": 0.962,
+    "roc_auc": 0.9933,
+    "confusion_matrix": [
+      [
+        662,
+        22
+      ],
+      [
+        30,
+        654
+      ]
+    ],
+    "true_negatives_active": 662,
+    "false_positives_fatigue_alarm": 22,
+    "false_negatives_missed_drowsiness": 30,
+    "true_positives_detected_drowsiness": 654,
+    "per_class": {
+      "Active Subjects": {
+        "precision": 0.9566,
+        "recall": 0.9678,
+        "f1_score": 0.9622,
+        "support": 684
+      },
+      "Fatigue Subjects": {
+        "precision": 0.9675,
+        "recall": 0.9561,
+        "f1_score": 0.9618,
+        "support": 684
+      }
+    },
+    "classification_report": {
+      "Active Subjects": {
+        "precision": 0.9566473988439307,
+        "recall": 0.9678362573099415,
+        "f1-score": 0.9622093023255814,
+        "support": 684.0
+      },
+      "Fatigue Subjects": {
+        "precision": 0.9674556213017751,
+        "recall": 0.956140350877193,
+        "f1-score": 0.961764705882353,
+        "support": 684.0
+      },
+      "accuracy": 0.9619883040935673,
+      "macro avg": {
+        "precision": 0.9620515100728528,
+        "recall": 0.9619883040935673,
+        "f1-score": 0.9619870041039672,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.962051510072853,
+        "recall": 0.9619883040935673,
+        "f1-score": 0.9619870041039672,
+        "support": 1368.0
+      }
+    },
+    "avg_inference_latency_ms": 11.51,
+    "misclassified_count": 52,
+    "sample_misclassified": [
+      {
+        "filename": "image_1890 (2).jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.38027772307395935
+      },
+      {
+        "filename": "image_0 (5).jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.8715876936912537
+      },
+      {
+        "filename": "image_780 (3).jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.2810349762439728
+      },
+      {
+        "filename": "img_f_4611.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.44230785965919495
+      },
+      {
+        "filename": "img_h_4320.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.16439926624298096
+      },
+      {
+        "filename": "img_e_5887.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.47722816467285156
+      },
+      {
+        "filename": "img_b_5829.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.17783430218696594
+      },
+      {
+        "filename": "img_h_14160.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.05257744342088699
+      },
+      {
+        "filename": "img_f_13166.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.3774663507938385
+      },
+      {
+        "filename": "image_1140 (2).jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.5306409001350403
+      },
+      {
+        "filename": "img_c_8207.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.8663273453712463
+      },
+      {
+        "filename": "img_c_12615.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.5228666663169861
+      },
+      {
+        "filename": "img_f_2320.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.07156350463628769
+      },
+      {
+        "filename": "image__13601.jpg",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob_fatigue": 0.37239864468574524
+      },
+      {
+        "filename": "img_c_14703.jpg",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob_fatigue": 0.5546356439590454
+      }
+    ],
+    "test_predictions_summary": {
+      "total": 1368,
+      "targets_sample": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "preds_sample": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "probs_sample": [
+        0.9589982628822327,
+        0.9999322891235352,
+        0.9996633529663086,
+        0.38027772307395935,
+        0.9996076226234436,
+        0.06050845608115196,
+        0.004884112160652876,
+        0.9922907948493958,
+        0.0005588459898717701,
+        0.035983774811029434,
+        0.9998224377632141,
+        0.7712619304656982,
+        2.9162260034354404e-05,
+        0.06049264594912529,
+        0.03864099457859993,
+        0.8451178073883057,
+        1.644106669118628e-05,
+        0.0988902747631073,
+        0.9998970031738281,
+        0.9968612194061279
+      ]
+    }
+  }
+}

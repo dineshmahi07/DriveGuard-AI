@@ -1,0 +1,48 @@
+{
+  "project_name": "DriveGuard AI — Intelligent Driver Drowsiness Detection System",
+  "version": "1.0.0",
+  "dataset": {
+    "raw_dir": "0 FaceImages",
+    "classes": ["Active Subjects", "Fatigue Subjects"],
+    "class_to_idx": {
+      "Active Subjects": 0,
+      "Fatigue Subjects": 1
+    },
+    "idx_to_class": {
+      "0": "Active Subjects",
+      "1": "Fatigue Subjects"
+    },
+    "image_size": [128, 128],
+    "channels": 3,
+    "seed": 42,
+    "train_split": 0.70,
+    "val_split": 0.15,
+    "test_split": 0.15
+  },
+  "training": {
+    "batch_size": 32,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 3,
+    "num_workers": 0
+  },
+  "models": {
+    "custom_cnn": {
+      "name": "DriveGuardCNN",
+      "description": "Custom 4-block deep convolutional neural network with BatchNorm, Dropout, and GAP trained from scratch"
+    },
+    "mobilenet_v2": {
+      "name": "DriveGuardMobileNetV2",
+      "description": "MobileNetV2 architecture with inverted residual blocks optimized for real-time edge deployment"
+    }
+  },
+  "paths": {
+    "configs": "configs",
+    "checkpoints": "checkpoints",
+    "metrics": "outputs/metrics",
+    "plots": "outputs/plots",
+    "predictions": "outputs/predictions",
+    "reports": "reports"
+  }
+}

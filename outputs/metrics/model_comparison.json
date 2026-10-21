@@ -1,0 +1,26 @@
+[
+  {
+    "Architecture": "DriveGuardCNN (From Scratch)",
+    "Test Accuracy (%)": 78.0,
+    "Balanced Accuracy (%)": 78.0,
+    "Fatigue Recall (%)": 70.76,
+    "Fatigue Precision (%)": 82.74,
+    "Macro F1-Score (%)": 77.88,
+    "ROC-AUC": 0.8747,
+    "Latency (ms/img)": 7.24,
+    "Parameters": "422,306",
+    "Model Size (MB)": 4.86
+  },
+  {
+    "Architecture": "DriveGuardMobileNetV2 (Transfer Learning)",
+    "Test Accuracy (%)": 96.2,
+    "Balanced Accuracy (%)": 96.2,
+    "Fatigue Recall (%)": 95.61,
+    "Fatigue Precision (%)": 96.75,
+    "Macro F1-Score (%)": 96.2,
+    "ROC-AUC": 0.9933,
+    "Latency (ms/img)": 11.51,
+    "Parameters": "2,388,098",
+    "Model Size (MB)": 27.7
+  }
+]
