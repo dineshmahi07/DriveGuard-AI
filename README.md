@@ -44,11 +44,6 @@ Driver-Drowsiness-Detection/
 │   ├── metrics/                     # Detailed JSON evaluation & history files
 │   ├── plots/                       # 12 high-resolution PNG visualizations
 │   └── predictions/                 # Per-sample test set prediction probabilities
-├── reports/
-│   ├── final_report.pdf             # Formatted academic project report (PDF)
-│   ├── final_report.docx            # Editable thesis technical report (DOCX)
-│   ├── presentation.pptx            # 12-slide academic defense presentation
-│   └── VIVA_PREPARATION.md          # Comprehensive viva preparation & technical defense guide
 ├── tests/
 │   └── test_pipeline.py             # Automated unit & integration test suite (8/8 passing)
 ├── notebooks/
